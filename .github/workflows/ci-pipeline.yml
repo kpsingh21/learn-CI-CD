@@ -5,7 +5,7 @@ on: # Triggers the workflow on specific events
     branches:
       - develop
     paths:
-      - 'folder-a/**'
+      - 'folder-A/**'
 
 jobs:
   sync-folder-a:
