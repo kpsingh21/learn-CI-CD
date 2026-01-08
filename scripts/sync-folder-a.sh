@@ -19,4 +19,4 @@ cd $TARGET_REPO
 
 git add .
 git commit -m "Sync folder-a from source repo" || echo "No changes"
-git push origin $TARGET_BRANCH
+# git push origin $TARGET_BRANCH
