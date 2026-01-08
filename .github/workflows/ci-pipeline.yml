@@ -1,0 +1,6 @@
+name: CI Pipeline for replicate code in differnt repos from current repo # The name of our workflow
+
+on: # Triggers the workflow on specific events
+  push:
+    branches:
+      - develop
