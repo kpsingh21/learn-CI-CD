@@ -5,14 +5,14 @@ TARGET_REPO="repo-A"
 TARGET_ORG="kpsingh21"   # same account
 TARGET_BRANCH="main"
 
-echo "Syncing folder-a to $TARGET_REPO..."
+echo "Syncing folder-A to $TARGET_REPO..."
 
 git config --global user.email "actions@github.com"
 git config --global user.name "GitHub Actions"
 
 git clone https://github.com/$TARGET_ORG/$TARGET_REPO.git
 rm -rf $TARGET_REPO/*
-cp -r folder-a/* $TARGET_REPO/
+cp -r folder-A/* $TARGET_REPO/
 
 cd $TARGET_REPO
 
