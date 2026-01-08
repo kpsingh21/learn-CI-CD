@@ -7,6 +7,9 @@ on: # Triggers the workflow on specific events
     paths:
       - 'folder-A/**'
 
+permissions:
+  contents: write
+
 jobs:
   sync-folder-a:
     runs-on: ubuntu-latest

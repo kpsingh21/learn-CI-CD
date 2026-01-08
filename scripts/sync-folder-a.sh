@@ -10,7 +10,7 @@ echo "Syncing folder-A to $TARGET_REPO..."
 git config --global user.email "actions@github.com"
 git config --global user.name "GitHub Actions"
 
-git clone https://github.com/$TARGET_ORG/$TARGET_REPO.git
+git clone https://x-access-token:${GITHUB_TOKEN}@github.com/$TARGET_ORG/$TARGET_REPO.git
 echo "Cloning https://github.com/$TARGET_ORG/$TARGET_REPO.git"
 rm -rf $TARGET_REPO/*
 cp -r folder-A/* $TARGET_REPO/
