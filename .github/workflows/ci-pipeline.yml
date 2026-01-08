@@ -4,3 +4,20 @@ on: # Triggers the workflow on specific events
   push:
     branches:
       - develop
+    paths:
+      - 'folder-a/**'
+
+jobs:
+  sync-folder-a:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Make scripts executable
+        run: chmod +x scripts/*.sh
+      
+      - name: Sync folder-a
+        run: ./scripts/sync-folder-a.sh
+
+
